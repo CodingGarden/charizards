@@ -19,9 +19,72 @@
     img {
       margin: 1rem;
     }
+    #submit {
+      display:flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      margin: 20px 20px 20px 20px;
+    }
+    #pokemons {
+      padding: 15px 12px;
+      font-weight: bold;
+      text-decoration: none;
+      font-size: 20px;
+      width: 25%;
+      margin: 5px auto;
+      background-color:lightskyblue;
+    }
+    #Pokemonlabel {
+      font-size: 25px;
+      font-weight: bold;
+    }
+    button {
+      background-color: orange; 
+      border: none;
+      color: white;
+      padding: 15px 12px;
+      text-align: center;
+      font-weight: bold;
+      text-decoration: none;
+      font-size: 20px;
+      margin: 5px auto;
+      border-radius: 12px;
+      width: 20%;
+    }
+    button:hover {
+    background-color: lightblue; 
+    color: black;
+}
   </style>
 </head>
 <body>
+  <form id="submit">
+    <label id="Pokemonlabel" for="pokemons">Select your Pokemon:</label>
+      <select id="pokemons">
+        <option value="1">Charizard</option>
+        <option value="2">Eevee</option>
+        <option value="3">Pikachu</option>
+        <option value="4">Snorlax</option>
+        <option value="5">Mewtwo</option>
+        <option value="6">Ditto</option>
+        <option value="7">Gengar</option>
+        <option value="8">Charmander</option>
+        <option value="9">Mewtwo</option>
+        <option value="10">Lucario</option>
+        <option value="11">Bulbasaur</option>
+        <option value="12">Mew</option>
+        <option value="13">Squirtle</option>
+        <option value="14">Gardevoir</option>
+        <option value="15">Giratina</option>
+        <option value="16">Garchomp</option>
+        <option value="17">Gyarados</option>
+        <option value="18">Dragonite</option>
+        <option value="19">Jigglypuff</option>
+      </select>
+    <button type="submit"> Find
+    </button>
+  </form>
   <div id="cards"></div>
   <script src="app.js"></script>
 </body>
